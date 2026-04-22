@@ -1,0 +1,81 @@
+.report-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.report-header h2 {
+  font-size: 1.6rem;
+  color: #1e293b;
+  margin: 0 0 0.5rem;
+}
+
+.meta {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #94a3b8;
+}
+
+.card-datatable { border-top-color: #3b82f6; }
+.card-roslyn { border-top-color: #8b5cf6; }
+.card-sqlite { border-top-color: #10b981; }
+
+.card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.main-stat {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.main-stat .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stats-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat .label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.stat .value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.formula-count {
+  font-size: 0.8rem;
+  color: #64748b;
+  text-align: left;
+}

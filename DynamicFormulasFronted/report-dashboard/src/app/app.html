@@ -1,0 +1,27 @@
+@if (report.loading()) {
+  <div class="loading">
+    <div class="spinner" role="status" aria-label="טוען נתונים"></div>
+    <p>טוען נתוני דוח...</p>
+  </div>
+} @else if (report.error()) {
+  <div class="error-box" role="alert">
+    <h2>⚠️ שגיאה</h2>
+    <p>{{ report.error() }}</p>
+    <p class="hint">יש להריץ את תוכנית ה-.NET קודם כדי לייצר את קובץ results.json</p>
+  </div>
+} @else if (report.data(); as data) {
+  <div class="dashboard" dir="rtl">
+    <app-summary-cards
+      [summaries]="data.summary"
+      [dataCount]="data.dataCount"
+      [generatedAt]="data.generatedAt"
+    />
+
+    <app-performance-chart [logs]="data.performanceLogs" />
+
+    <app-results-table
+      [logs]="data.performanceLogs"
+      [formulas]="data.formulas"
+    />
+  </div>
+}

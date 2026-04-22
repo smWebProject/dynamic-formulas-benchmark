@@ -1,0 +1,33 @@
+<div class="report-header">
+  <h2>דוח השוואת ביצועים - נוסחאות דינמיות</h2>
+  <p class="meta">
+    תאריך הרצה: {{ generatedAt() }} | כמות רשומות: {{ dataCount().toLocaleString() }}
+  </p>
+</div>
+
+<div class="cards-grid">
+  @for (s of summaries(); track s.method) {
+    <div class="card" [class]="'card card-' + getMethodClass(s.method)">
+      <h3>{{ s.method }}</h3>
+      <div class="stat main-stat">
+        <span class="label">זמן כולל</span>
+        <span class="value">{{ s.totalTime.toFixed(2) }}s</span>
+      </div>
+      <div class="stats-row">
+        <div class="stat">
+          <span class="label">ממוצע</span>
+          <span class="value">{{ s.avgTime.toFixed(3) }}s</span>
+        </div>
+        <div class="stat">
+          <span class="label">מינימום</span>
+          <span class="value">{{ s.minTime.toFixed(3) }}s</span>
+        </div>
+        <div class="stat">
+          <span class="label">מקסימום</span>
+          <span class="value">{{ s.maxTime.toFixed(3) }}s</span>
+        </div>
+      </div>
+      <div class="formula-count">{{ s.formulaCount }} נוסחאות</div>
+    </div>
+  }
+</div>

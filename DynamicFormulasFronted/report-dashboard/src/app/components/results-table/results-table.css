@@ -1,0 +1,93 @@
+.table-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.table-container h3 {
+  margin: 0 0 1rem;
+  color: #1e293b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  background: #f1f5f9;
+  padding: 0.75rem;
+  text-align: right;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: right;
+}
+
+tr:hover {
+  background: #f8fafc;
+}
+
+.formula-cell code {
+  background: #f1f5f9;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.condition-cell code {
+  font-size: 0.8rem;
+  color: #7c3aed;
+}
+
+.no-condition {
+  color: #cbd5e1;
+}
+
+.time-cell {
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+.time-cell.fastest {
+  background: #ecfdf5;
+  color: #059669;
+  font-weight: 700;
+}
+
+.fastest-cell {
+  font-weight: 600;
+  color: #059669;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.8rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-simple { background: #dbeafe; color: #1d4ed8; }
+.badge-complex { background: #fce7f3; color: #be185d; }
+.badge-conditional { background: #ede9fe; color: #6d28d9; }
+
+.time-col {
+  text-align: center;
+}

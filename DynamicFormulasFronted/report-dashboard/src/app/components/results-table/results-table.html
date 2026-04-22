@@ -1,0 +1,43 @@
+<div class="table-container">
+  <h3>פירוט זמני ריצה לפי נוסחה</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>נוסחה</th>
+        <th>סוג</th>
+        <th>תנאי</th>
+        @for (m of methods(); track m) {
+          <th class="time-col">{{ m }}</th>
+        }
+        <th>מהיר ביותר</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (row of tableRows(); track row.formula.id) {
+        <tr>
+          <td>{{ row.formula.id }}</td>
+          <td class="formula-cell"><code>{{ row.formula.formula }}</code></td>
+          <td><span [class]="getTypeBadgeClass(row.formula.type)">{{ getTypeLabel(row.formula.type) }}</span></td>
+          <td class="condition-cell">
+            @if (row.formula.condition) {
+              <code>{{ row.formula.condition }}</code>
+            } @else {
+              <span class="no-condition">—</span>
+            }
+          </td>
+          @for (m of methods(); track m) {
+            <td class="time-cell" [class.fastest]="row.fastest === m">
+              @if (row.times[m] >= 0) {
+                {{ row.times[m].toFixed(3) }}s
+              } @else {
+                <span class="error">שגיאה</span>
+              }
+            </td>
+          }
+          <td class="fastest-cell">{{ row.fastest }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

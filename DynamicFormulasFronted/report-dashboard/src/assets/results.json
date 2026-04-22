@@ -1,0 +1,1301 @@
+{
+  "generatedAt": "2026-04-22 15:53:58",
+  "dataCount": 1000000,
+  "formulas": [
+    {
+      "id": 1,
+      "formula": "a \u002B b",
+      "condition": null,
+      "falseFormula": null,
+      "type": "simple"
+    },
+    {
+      "id": 2,
+      "formula": "c * 2",
+      "condition": null,
+      "falseFormula": null,
+      "type": "simple"
+    },
+    {
+      "id": 3,
+      "formula": "a - b",
+      "condition": null,
+      "falseFormula": null,
+      "type": "simple"
+    },
+    {
+      "id": 4,
+      "formula": "d / 4",
+      "condition": null,
+      "falseFormula": null,
+      "type": "simple"
+    },
+    {
+      "id": 5,
+      "formula": "(a \u002B b) * 8",
+      "condition": null,
+      "falseFormula": null,
+      "type": "simple"
+    },
+    {
+      "id": 6,
+      "formula": "sqrt(c * c \u002B d * d)",
+      "condition": null,
+      "falseFormula": null,
+      "type": "complex"
+    },
+    {
+      "id": 7,
+      "formula": "log(b) \u002B c",
+      "condition": null,
+      "falseFormula": null,
+      "type": "complex"
+    },
+    {
+      "id": 8,
+      "formula": "abs(d - b)",
+      "condition": null,
+      "falseFormula": null,
+      "type": "complex"
+    },
+    {
+      "id": 9,
+      "formula": "b * 2",
+      "condition": "a \u003E 5",
+      "falseFormula": "b / 2",
+      "type": "conditional"
+    },
+    {
+      "id": 10,
+      "formula": "a \u002B 1",
+      "condition": "b \u003C 10",
+      "falseFormula": "d - 1",
+      "type": "conditional"
+    },
+    {
+      "id": 11,
+      "formula": "1",
+      "condition": "a == c",
+      "falseFormula": "0",
+      "type": "conditional"
+    }
+  ],
+  "performanceLogs": [
+    {
+      "formulaId": 1,
+      "formulaName": "a \u002B b",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 4.8073
+    },
+    {
+      "formulaId": 2,
+      "formulaName": "c * 2",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 4.1199
+    },
+    {
+      "formulaId": 3,
+      "formulaName": "a - b",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 4.6606
+    },
+    {
+      "formulaId": 4,
+      "formulaName": "d / 4",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 3.4912
+    },
+    {
+      "formulaId": 5,
+      "formulaName": "(a \u002B b) * 8",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 4.5782
+    },
+    {
+      "formulaId": 6,
+      "formulaName": "sqrt(c * c \u002B d * d)",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 6.8799
+    },
+    {
+      "formulaId": 7,
+      "formulaName": "log(b) \u002B c",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 7.063
+    },
+    {
+      "formulaId": 8,
+      "formulaName": "abs(d - b)",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 8.2004
+    },
+    {
+      "formulaId": 9,
+      "formulaName": "b * 2",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 11.3896
+    },
+    {
+      "formulaId": 10,
+      "formulaName": "a \u002B 1",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 13.5655
+    },
+    {
+      "formulaId": 11,
+      "formulaName": "1",
+      "method": "DataTable.Compute",
+      "runTimeSeconds": 20.0524
+    },
+    {
+      "formulaId": 1,
+      "formulaName": "a \u002B b",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.3679
+    },
+    {
+      "formulaId": 2,
+      "formulaName": "c * 2",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2107
+    },
+    {
+      "formulaId": 3,
+      "formulaName": "a - b",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2168
+    },
+    {
+      "formulaId": 4,
+      "formulaName": "d / 4",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.1856
+    },
+    {
+      "formulaId": 5,
+      "formulaName": "(a \u002B b) * 8",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.239
+    },
+    {
+      "formulaId": 6,
+      "formulaName": "sqrt(c * c \u002B d * d)",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2496
+    },
+    {
+      "formulaId": 7,
+      "formulaName": "log(b) \u002B c",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.287
+    },
+    {
+      "formulaId": 8,
+      "formulaName": "abs(d - b)",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2562
+    },
+    {
+      "formulaId": 9,
+      "formulaName": "b * 2",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2427
+    },
+    {
+      "formulaId": 10,
+      "formulaName": "a \u002B 1",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2614
+    },
+    {
+      "formulaId": 11,
+      "formulaName": "1",
+      "method": "Roslyn",
+      "runTimeSeconds": 0.2017
+    },
+    {
+      "formulaId": 1,
+      "formulaName": "a \u002B b",
+      "method": "SQLite",
+      "runTimeSeconds": 0.6194
+    },
+    {
+      "formulaId": 2,
+      "formulaName": "c * 2",
+      "method": "SQLite",
+      "runTimeSeconds": 0.5839
+    },
+    {
+      "formulaId": 3,
+      "formulaName": "a - b",
+      "method": "SQLite",
+      "runTimeSeconds": 0.5734
+    },
+    {
+      "formulaId": 4,
+      "formulaName": "d / 4",
+      "method": "SQLite",
+      "runTimeSeconds": 0.5854
+    },
+    {
+      "formulaId": 5,
+      "formulaName": "(a \u002B b) * 8",
+      "method": "SQLite",
+      "runTimeSeconds": 0.6182
+    },
+    {
+      "formulaId": 6,
+      "formulaName": "sqrt(c * c \u002B d * d)",
+      "method": "SQLite",
+      "runTimeSeconds": 0.7655
+    },
+    {
+      "formulaId": 7,
+      "formulaName": "log(b) \u002B c",
+      "method": "SQLite",
+      "runTimeSeconds": 0.6238
+    },
+    {
+      "formulaId": 8,
+      "formulaName": "abs(d - b)",
+      "method": "SQLite",
+      "runTimeSeconds": 0.4517
+    },
+    {
+      "formulaId": 9,
+      "formulaName": "b * 2",
+      "method": "SQLite",
+      "runTimeSeconds": 0.532
+    },
+    {
+      "formulaId": 10,
+      "formulaName": "a \u002B 1",
+      "method": "SQLite",
+      "runTimeSeconds": 0.4308
+    },
+    {
+      "formulaId": 11,
+      "formulaName": "1",
+      "method": "SQLite",
+      "runTimeSeconds": 0.5517
+    }
+  ],
+  "summary": [
+    {
+      "method": "DataTable.Compute",
+      "totalTime": 88.808,
+      "avgTime": 8.0735,
+      "minTime": 3.4912,
+      "maxTime": 20.0524,
+      "formulaCount": 11
+    },
+    {
+      "method": "Roslyn",
+      "totalTime": 2.7188,
+      "avgTime": 0.2472,
+      "minTime": 0.1856,
+      "maxTime": 0.3679,
+      "formulaCount": 11
+    },
+    {
+      "method": "SQLite",
+      "totalTime": 6.3357,
+      "avgTime": 0.576,
+      "minTime": 0.4308,
+      "maxTime": 0.7655,
+      "formulaCount": 11
+    }
+  ],
+  "sampleResults": [
+    {
+      "dataId": 1,
+      "formulaId": 1,
+      "method": "DataTable.Compute",
+      "result": 82.09
+    },
+    {
+      "dataId": 2,
+      "formulaId": 1,
+      "method": "DataTable.Compute",
+      "result": 44.67
+    },
+    {
+      "dataId": 3,
+      "formulaId": 1,
+      "method": "DataTable.Compute",
+      "result": 94.55
+    },
+    {
+      "dataId": 4,
+      "formulaId": 1,
+      "method": "DataTable.Compute",
+      "result": 83.75
+    },
+    {
+      "dataId": 5,
+      "formulaId": 1,
+      "method": "DataTable.Compute",
+      "result": 56.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 2,
+      "method": "DataTable.Compute",
+      "result": 26.86
+    },
+    {
+      "dataId": 2,
+      "formulaId": 2,
+      "method": "DataTable.Compute",
+      "result": 145.44
+    },
+    {
+      "dataId": 3,
+      "formulaId": 2,
+      "method": "DataTable.Compute",
+      "result": 48.44
+    },
+    {
+      "dataId": 4,
+      "formulaId": 2,
+      "method": "DataTable.Compute",
+      "result": 77.44
+    },
+    {
+      "dataId": 5,
+      "formulaId": 2,
+      "method": "DataTable.Compute",
+      "result": 163.2
+    },
+    {
+      "dataId": 1,
+      "formulaId": 3,
+      "method": "DataTable.Compute",
+      "result": 52.19
+    },
+    {
+      "dataId": 2,
+      "formulaId": 3,
+      "method": "DataTable.Compute",
+      "result": -9.33
+    },
+    {
+      "dataId": 3,
+      "formulaId": 3,
+      "method": "DataTable.Compute",
+      "result": -58.17
+    },
+    {
+      "dataId": 4,
+      "formulaId": 3,
+      "method": "DataTable.Compute",
+      "result": 18.35
+    },
+    {
+      "dataId": 5,
+      "formulaId": 3,
+      "method": "DataTable.Compute",
+      "result": 47.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 4,
+      "method": "DataTable.Compute",
+      "result": 13.1875
+    },
+    {
+      "dataId": 2,
+      "formulaId": 4,
+      "method": "DataTable.Compute",
+      "result": 12.945
+    },
+    {
+      "dataId": 3,
+      "formulaId": 4,
+      "method": "DataTable.Compute",
+      "result": 6.6175
+    },
+    {
+      "dataId": 4,
+      "formulaId": 4,
+      "method": "DataTable.Compute",
+      "result": 6.69
+    },
+    {
+      "dataId": 5,
+      "formulaId": 4,
+      "method": "DataTable.Compute",
+      "result": 14.535
+    },
+    {
+      "dataId": 1,
+      "formulaId": 5,
+      "method": "DataTable.Compute",
+      "result": 656.72
+    },
+    {
+      "dataId": 2,
+      "formulaId": 5,
+      "method": "DataTable.Compute",
+      "result": 357.36
+    },
+    {
+      "dataId": 3,
+      "formulaId": 5,
+      "method": "DataTable.Compute",
+      "result": 756.4
+    },
+    {
+      "dataId": 4,
+      "formulaId": 5,
+      "method": "DataTable.Compute",
+      "result": 670
+    },
+    {
+      "dataId": 5,
+      "formulaId": 5,
+      "method": "DataTable.Compute",
+      "result": 453.84
+    },
+    {
+      "dataId": 1,
+      "formulaId": 6,
+      "method": "DataTable.Compute",
+      "result": 54.432779
+    },
+    {
+      "dataId": 2,
+      "formulaId": 6,
+      "method": "DataTable.Compute",
+      "result": 89.27131
+    },
+    {
+      "dataId": 3,
+      "formulaId": 6,
+      "method": "DataTable.Compute",
+      "result": 35.878535
+    },
+    {
+      "dataId": 4,
+      "formulaId": 6,
+      "method": "DataTable.Compute",
+      "result": 47.067356
+    },
+    {
+      "dataId": 5,
+      "formulaId": 6,
+      "method": "DataTable.Compute",
+      "result": 100.19391
+    },
+    {
+      "dataId": 1,
+      "formulaId": 7,
+      "method": "DataTable.Compute",
+      "result": 16.134711
+    },
+    {
+      "dataId": 2,
+      "formulaId": 7,
+      "method": "DataTable.Compute",
+      "result": 76.015837
+    },
+    {
+      "dataId": 3,
+      "formulaId": 7,
+      "method": "DataTable.Compute",
+      "result": 28.555459
+    },
+    {
+      "dataId": 4,
+      "formulaId": 7,
+      "method": "DataTable.Compute",
+      "result": 42.207375
+    },
+    {
+      "dataId": 5,
+      "formulaId": 7,
+      "method": "DataTable.Compute",
+      "result": 83.104077
+    },
+    {
+      "dataId": 1,
+      "formulaId": 8,
+      "method": "DataTable.Compute",
+      "result": 37.8
+    },
+    {
+      "dataId": 2,
+      "formulaId": 8,
+      "method": "DataTable.Compute",
+      "result": 24.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 8,
+      "method": "DataTable.Compute",
+      "result": 49.89
+    },
+    {
+      "dataId": 4,
+      "formulaId": 8,
+      "method": "DataTable.Compute",
+      "result": 5.94
+    },
+    {
+      "dataId": 5,
+      "formulaId": 8,
+      "method": "DataTable.Compute",
+      "result": 53.64
+    },
+    {
+      "dataId": 1,
+      "formulaId": 9,
+      "method": "DataTable.Compute",
+      "result": 29.9
+    },
+    {
+      "dataId": 2,
+      "formulaId": 9,
+      "method": "DataTable.Compute",
+      "result": 54
+    },
+    {
+      "dataId": 3,
+      "formulaId": 9,
+      "method": "DataTable.Compute",
+      "result": 152.72
+    },
+    {
+      "dataId": 4,
+      "formulaId": 9,
+      "method": "DataTable.Compute",
+      "result": 65.4
+    },
+    {
+      "dataId": 5,
+      "formulaId": 9,
+      "method": "DataTable.Compute",
+      "result": 9
+    },
+    {
+      "dataId": 1,
+      "formulaId": 10,
+      "method": "DataTable.Compute",
+      "result": 51.75
+    },
+    {
+      "dataId": 2,
+      "formulaId": 10,
+      "method": "DataTable.Compute",
+      "result": 50.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 10,
+      "method": "DataTable.Compute",
+      "result": 25.47
+    },
+    {
+      "dataId": 4,
+      "formulaId": 10,
+      "method": "DataTable.Compute",
+      "result": 25.76
+    },
+    {
+      "dataId": 5,
+      "formulaId": 10,
+      "method": "DataTable.Compute",
+      "result": 53.23
+    },
+    {
+      "dataId": 1,
+      "formulaId": 11,
+      "method": "DataTable.Compute",
+      "result": null
+    },
+    {
+      "dataId": 2,
+      "formulaId": 11,
+      "method": "DataTable.Compute",
+      "result": null
+    },
+    {
+      "dataId": 3,
+      "formulaId": 11,
+      "method": "DataTable.Compute",
+      "result": null
+    },
+    {
+      "dataId": 4,
+      "formulaId": 11,
+      "method": "DataTable.Compute",
+      "result": null
+    },
+    {
+      "dataId": 5,
+      "formulaId": 11,
+      "method": "DataTable.Compute",
+      "result": null
+    },
+    {
+      "dataId": 1,
+      "formulaId": 1,
+      "method": "Roslyn",
+      "result": 82.09
+    },
+    {
+      "dataId": 2,
+      "formulaId": 1,
+      "method": "Roslyn",
+      "result": 44.67
+    },
+    {
+      "dataId": 3,
+      "formulaId": 1,
+      "method": "Roslyn",
+      "result": 94.55
+    },
+    {
+      "dataId": 4,
+      "formulaId": 1,
+      "method": "Roslyn",
+      "result": 83.75
+    },
+    {
+      "dataId": 5,
+      "formulaId": 1,
+      "method": "Roslyn",
+      "result": 56.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 2,
+      "method": "Roslyn",
+      "result": 26.86
+    },
+    {
+      "dataId": 2,
+      "formulaId": 2,
+      "method": "Roslyn",
+      "result": 145.44
+    },
+    {
+      "dataId": 3,
+      "formulaId": 2,
+      "method": "Roslyn",
+      "result": 48.44
+    },
+    {
+      "dataId": 4,
+      "formulaId": 2,
+      "method": "Roslyn",
+      "result": 77.44
+    },
+    {
+      "dataId": 5,
+      "formulaId": 2,
+      "method": "Roslyn",
+      "result": 163.2
+    },
+    {
+      "dataId": 1,
+      "formulaId": 3,
+      "method": "Roslyn",
+      "result": 52.19
+    },
+    {
+      "dataId": 2,
+      "formulaId": 3,
+      "method": "Roslyn",
+      "result": -9.33
+    },
+    {
+      "dataId": 3,
+      "formulaId": 3,
+      "method": "Roslyn",
+      "result": -58.17
+    },
+    {
+      "dataId": 4,
+      "formulaId": 3,
+      "method": "Roslyn",
+      "result": 18.35
+    },
+    {
+      "dataId": 5,
+      "formulaId": 3,
+      "method": "Roslyn",
+      "result": 47.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 4,
+      "method": "Roslyn",
+      "result": 13.1875
+    },
+    {
+      "dataId": 2,
+      "formulaId": 4,
+      "method": "Roslyn",
+      "result": 12.945
+    },
+    {
+      "dataId": 3,
+      "formulaId": 4,
+      "method": "Roslyn",
+      "result": 6.6175
+    },
+    {
+      "dataId": 4,
+      "formulaId": 4,
+      "method": "Roslyn",
+      "result": 6.69
+    },
+    {
+      "dataId": 5,
+      "formulaId": 4,
+      "method": "Roslyn",
+      "result": 14.535
+    },
+    {
+      "dataId": 1,
+      "formulaId": 5,
+      "method": "Roslyn",
+      "result": 656.72
+    },
+    {
+      "dataId": 2,
+      "formulaId": 5,
+      "method": "Roslyn",
+      "result": 357.36
+    },
+    {
+      "dataId": 3,
+      "formulaId": 5,
+      "method": "Roslyn",
+      "result": 756.4
+    },
+    {
+      "dataId": 4,
+      "formulaId": 5,
+      "method": "Roslyn",
+      "result": 670
+    },
+    {
+      "dataId": 5,
+      "formulaId": 5,
+      "method": "Roslyn",
+      "result": 453.84
+    },
+    {
+      "dataId": 1,
+      "formulaId": 6,
+      "method": "Roslyn",
+      "result": 54.432779
+    },
+    {
+      "dataId": 2,
+      "formulaId": 6,
+      "method": "Roslyn",
+      "result": 89.27131
+    },
+    {
+      "dataId": 3,
+      "formulaId": 6,
+      "method": "Roslyn",
+      "result": 35.878535
+    },
+    {
+      "dataId": 4,
+      "formulaId": 6,
+      "method": "Roslyn",
+      "result": 47.067356
+    },
+    {
+      "dataId": 5,
+      "formulaId": 6,
+      "method": "Roslyn",
+      "result": 100.19391
+    },
+    {
+      "dataId": 1,
+      "formulaId": 7,
+      "method": "Roslyn",
+      "result": 16.134711
+    },
+    {
+      "dataId": 2,
+      "formulaId": 7,
+      "method": "Roslyn",
+      "result": 76.015837
+    },
+    {
+      "dataId": 3,
+      "formulaId": 7,
+      "method": "Roslyn",
+      "result": 28.555459
+    },
+    {
+      "dataId": 4,
+      "formulaId": 7,
+      "method": "Roslyn",
+      "result": 42.207375
+    },
+    {
+      "dataId": 5,
+      "formulaId": 7,
+      "method": "Roslyn",
+      "result": 83.104077
+    },
+    {
+      "dataId": 1,
+      "formulaId": 8,
+      "method": "Roslyn",
+      "result": 37.8
+    },
+    {
+      "dataId": 2,
+      "formulaId": 8,
+      "method": "Roslyn",
+      "result": 24.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 8,
+      "method": "Roslyn",
+      "result": 49.89
+    },
+    {
+      "dataId": 4,
+      "formulaId": 8,
+      "method": "Roslyn",
+      "result": 5.94
+    },
+    {
+      "dataId": 5,
+      "formulaId": 8,
+      "method": "Roslyn",
+      "result": 53.64
+    },
+    {
+      "dataId": 1,
+      "formulaId": 9,
+      "method": "Roslyn",
+      "result": 29.9
+    },
+    {
+      "dataId": 2,
+      "formulaId": 9,
+      "method": "Roslyn",
+      "result": 54
+    },
+    {
+      "dataId": 3,
+      "formulaId": 9,
+      "method": "Roslyn",
+      "result": 152.72
+    },
+    {
+      "dataId": 4,
+      "formulaId": 9,
+      "method": "Roslyn",
+      "result": 65.4
+    },
+    {
+      "dataId": 5,
+      "formulaId": 9,
+      "method": "Roslyn",
+      "result": 9
+    },
+    {
+      "dataId": 1,
+      "formulaId": 10,
+      "method": "Roslyn",
+      "result": 51.75
+    },
+    {
+      "dataId": 2,
+      "formulaId": 10,
+      "method": "Roslyn",
+      "result": 50.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 10,
+      "method": "Roslyn",
+      "result": 25.47
+    },
+    {
+      "dataId": 4,
+      "formulaId": 10,
+      "method": "Roslyn",
+      "result": 25.76
+    },
+    {
+      "dataId": 5,
+      "formulaId": 10,
+      "method": "Roslyn",
+      "result": 53.23
+    },
+    {
+      "dataId": 1,
+      "formulaId": 11,
+      "method": "Roslyn",
+      "result": 0
+    },
+    {
+      "dataId": 2,
+      "formulaId": 11,
+      "method": "Roslyn",
+      "result": 0
+    },
+    {
+      "dataId": 3,
+      "formulaId": 11,
+      "method": "Roslyn",
+      "result": 0
+    },
+    {
+      "dataId": 4,
+      "formulaId": 11,
+      "method": "Roslyn",
+      "result": 0
+    },
+    {
+      "dataId": 5,
+      "formulaId": 11,
+      "method": "Roslyn",
+      "result": 0
+    },
+    {
+      "dataId": 1,
+      "formulaId": 1,
+      "method": "SQLite",
+      "result": 82.09
+    },
+    {
+      "dataId": 2,
+      "formulaId": 1,
+      "method": "SQLite",
+      "result": 44.67
+    },
+    {
+      "dataId": 3,
+      "formulaId": 1,
+      "method": "SQLite",
+      "result": 94.55
+    },
+    {
+      "dataId": 4,
+      "formulaId": 1,
+      "method": "SQLite",
+      "result": 83.75
+    },
+    {
+      "dataId": 5,
+      "formulaId": 1,
+      "method": "SQLite",
+      "result": 56.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 2,
+      "method": "SQLite",
+      "result": 26.86
+    },
+    {
+      "dataId": 2,
+      "formulaId": 2,
+      "method": "SQLite",
+      "result": 145.44
+    },
+    {
+      "dataId": 3,
+      "formulaId": 2,
+      "method": "SQLite",
+      "result": 48.44
+    },
+    {
+      "dataId": 4,
+      "formulaId": 2,
+      "method": "SQLite",
+      "result": 77.44
+    },
+    {
+      "dataId": 5,
+      "formulaId": 2,
+      "method": "SQLite",
+      "result": 163.2
+    },
+    {
+      "dataId": 1,
+      "formulaId": 3,
+      "method": "SQLite",
+      "result": 52.19
+    },
+    {
+      "dataId": 2,
+      "formulaId": 3,
+      "method": "SQLite",
+      "result": -9.33
+    },
+    {
+      "dataId": 3,
+      "formulaId": 3,
+      "method": "SQLite",
+      "result": -58.17
+    },
+    {
+      "dataId": 4,
+      "formulaId": 3,
+      "method": "SQLite",
+      "result": 18.35
+    },
+    {
+      "dataId": 5,
+      "formulaId": 3,
+      "method": "SQLite",
+      "result": 47.73
+    },
+    {
+      "dataId": 1,
+      "formulaId": 4,
+      "method": "SQLite",
+      "result": 13.1875
+    },
+    {
+      "dataId": 2,
+      "formulaId": 4,
+      "method": "SQLite",
+      "result": 12.945
+    },
+    {
+      "dataId": 3,
+      "formulaId": 4,
+      "method": "SQLite",
+      "result": 6.6175
+    },
+    {
+      "dataId": 4,
+      "formulaId": 4,
+      "method": "SQLite",
+      "result": 6.69
+    },
+    {
+      "dataId": 5,
+      "formulaId": 4,
+      "method": "SQLite",
+      "result": 14.535
+    },
+    {
+      "dataId": 1,
+      "formulaId": 5,
+      "method": "SQLite",
+      "result": 656.72
+    },
+    {
+      "dataId": 2,
+      "formulaId": 5,
+      "method": "SQLite",
+      "result": 357.36
+    },
+    {
+      "dataId": 3,
+      "formulaId": 5,
+      "method": "SQLite",
+      "result": 756.4
+    },
+    {
+      "dataId": 4,
+      "formulaId": 5,
+      "method": "SQLite",
+      "result": 670
+    },
+    {
+      "dataId": 5,
+      "formulaId": 5,
+      "method": "SQLite",
+      "result": 453.84
+    },
+    {
+      "dataId": 1,
+      "formulaId": 6,
+      "method": "SQLite",
+      "result": 54.432779
+    },
+    {
+      "dataId": 2,
+      "formulaId": 6,
+      "method": "SQLite",
+      "result": 89.27131
+    },
+    {
+      "dataId": 3,
+      "formulaId": 6,
+      "method": "SQLite",
+      "result": 35.878535
+    },
+    {
+      "dataId": 4,
+      "formulaId": 6,
+      "method": "SQLite",
+      "result": 47.067356
+    },
+    {
+      "dataId": 5,
+      "formulaId": 6,
+      "method": "SQLite",
+      "result": 100.19391
+    },
+    {
+      "dataId": 1,
+      "formulaId": 7,
+      "method": "SQLite",
+      "result": 16.134711
+    },
+    {
+      "dataId": 2,
+      "formulaId": 7,
+      "method": "SQLite",
+      "result": 76.015837
+    },
+    {
+      "dataId": 3,
+      "formulaId": 7,
+      "method": "SQLite",
+      "result": 28.555459
+    },
+    {
+      "dataId": 4,
+      "formulaId": 7,
+      "method": "SQLite",
+      "result": 42.207375
+    },
+    {
+      "dataId": 5,
+      "formulaId": 7,
+      "method": "SQLite",
+      "result": 83.104077
+    },
+    {
+      "dataId": 1,
+      "formulaId": 8,
+      "method": "SQLite",
+      "result": 37.8
+    },
+    {
+      "dataId": 2,
+      "formulaId": 8,
+      "method": "SQLite",
+      "result": 24.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 8,
+      "method": "SQLite",
+      "result": 49.89
+    },
+    {
+      "dataId": 4,
+      "formulaId": 8,
+      "method": "SQLite",
+      "result": 5.94
+    },
+    {
+      "dataId": 5,
+      "formulaId": 8,
+      "method": "SQLite",
+      "result": 53.64
+    },
+    {
+      "dataId": 1,
+      "formulaId": 9,
+      "method": "SQLite",
+      "result": 29.9
+    },
+    {
+      "dataId": 2,
+      "formulaId": 9,
+      "method": "SQLite",
+      "result": 54
+    },
+    {
+      "dataId": 3,
+      "formulaId": 9,
+      "method": "SQLite",
+      "result": 152.72
+    },
+    {
+      "dataId": 4,
+      "formulaId": 9,
+      "method": "SQLite",
+      "result": 65.4
+    },
+    {
+      "dataId": 5,
+      "formulaId": 9,
+      "method": "SQLite",
+      "result": 9
+    },
+    {
+      "dataId": 1,
+      "formulaId": 10,
+      "method": "SQLite",
+      "result": 51.75
+    },
+    {
+      "dataId": 2,
+      "formulaId": 10,
+      "method": "SQLite",
+      "result": 50.78
+    },
+    {
+      "dataId": 3,
+      "formulaId": 10,
+      "method": "SQLite",
+      "result": 25.47
+    },
+    {
+      "dataId": 4,
+      "formulaId": 10,
+      "method": "SQLite",
+      "result": 25.76
+    },
+    {
+      "dataId": 5,
+      "formulaId": 10,
+      "method": "SQLite",
+      "result": 53.23
+    },
+    {
+      "dataId": 1,
+      "formulaId": 11,
+      "method": "SQLite",
+      "result": 0
+    },
+    {
+      "dataId": 2,
+      "formulaId": 11,
+      "method": "SQLite",
+      "result": 0
+    },
+    {
+      "dataId": 3,
+      "formulaId": 11,
+      "method": "SQLite",
+      "result": 0
+    },
+    {
+      "dataId": 4,
+      "formulaId": 11,
+      "method": "SQLite",
+      "result": 0
+    },
+    {
+      "dataId": 5,
+      "formulaId": 11,
+      "method": "SQLite",
+      "result": 0
+    }
+  ]
+}

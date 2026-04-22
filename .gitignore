@@ -1,0 +1,15 @@
+# .NET
+DynamicFormulas/bin/
+DynamicFormulas/obj/
+DynamicFormulas/.vs/
+DynamicFormulas/*.db
+
+# Angular
+DynamicFormulasFronted/report-dashboard/node_modules/
+DynamicFormulasFronted/report-dashboard/dist/
+DynamicFormulasFronted/report-dashboard/.angular/
+
+# IDE
+.vs/
+*.user
+*.suo
